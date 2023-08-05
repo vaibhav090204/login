@@ -1,0 +1,157 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f6f6f6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007BFF;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px;
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p.success-message {
+    text-align: center;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.form-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    color: #666;
+    cursor: pointer;
+}
+
+.remember-me input {
+    margin-right: 5px;
+}
+
+.signup-link {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #007BFF;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+
+    input {
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px;
+    }
+
+    .social-icons {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .form-options {
+        flex-direction: column;
+    }
+
+    .remember-me {
+        margin-bottom: 10px;
+    }
+
+    .remember-me input {
+        margin-right: 8px;
+    }
+}
+#password-strength {
+    margin-top: 5px;
+}
